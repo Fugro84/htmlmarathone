@@ -166,6 +166,16 @@
   width: 370px;
 }
 
+.deal::after {
+  background-color: rgba(0, 0, 0, 0.2);
+  content: "";
+  display: block;
+  height: 1px;
+  margin-left: 135px;
+  margin-top: 30px;
+  width: 100px;
+}
+
 .deal__title {
   font-family: 'Playfair Display', sans-serif;
   font-size: 23px;
