@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic,cyrillic-ext');
+
+.main-container {
+  color: #000000;
+  font-family: 'Roboto';
+  margin: auto;
+  width: 1440px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  justify-content: space-around;
+  min-height: 218px;
+}
+
+.header__title {
+  display: inline-block;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 35px;
+  letter-spacing: 1px;
+  line-height: 18px;
+  margin: 40px auto 0;
+}
+
+.menu {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  width: 1170px;
+}
+
+.menu__list {
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.menu__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Основное содержимое страницы */
+
+/* Секция приветствия */
+.greetings-section {
+  align-items: center;
+  background: url("../img/main_background.jpg") no-repeat;
+  color: #ffffff;
+  justify-content: space-around;
+  min-height: 464px;
+}
+
+.greetings-section__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 72px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 84px;
+  position: relative;
+  top: -55px;
+  text-transform: uppercase;
+}
+
+.greetings-section__text {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.reviews-section {
+  align-items: center;
+  justify-content: space-between;
+  min-height: 463px;
+}
+
+.reviews-container {
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 1170px;
+}
+
+.reviews-section__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin-top: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reviews {
+  justify-content: space-between;
+  min-height: 330px;
+  width: 370px;
+}
+
+.reviews__title {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 23px;
+  font-weight: 900;
+  line-height: 31px;
+}
+
+.reviews__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.active-link {
+  color: #FF7931;
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.9px;
+}
+
+.deals-section {
+  background: url("../img/deals_bg.jpg");
+  display: flex;
+  margin-bottom: 50px;
+  min-height: 556px;
+}
+
+.deals-container {
+  align-items: center;
+  justify-content: space-between;
+  margin: auto auto;
+  min-height: 487px;
+}
+
+.deals-container__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.deals-container__list {
+  display: inline-block;
+}
+
+.deal {
+  margin-top: 20px;
+  min-height: 120px;
+  text-align: center;
+  width: 370px;
+}
+
+.deal__title {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 23px;
+  line-height: 31px;
+}
+
+.deal__text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  margin-top: 10px;
+}
+
+.deals-container__link {
+  background-color: #FF7931;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  height: 47px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 47px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 170px;
+}
+
+.deals-container__link::after {
+  background: url("../img/button_arrow.png") no-repeat;
+  display: inline-block;
+  content: "";
+  margin-left: 5px;
+  height: 24px;
+  vertical-align: middle;
+  width: 25px;
+}
+
+.footer {
+  align-items: center;
+  background-color: #575757;
+  justify-content: space-around;
+  min-height: 295px;
+}
+
+.footer__title {
+  color: #ffffff;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 37px;
+}
+
+.footer .menu__list {
+  flex-direction: row;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 46px;
+}
+
+.footer .menu__link {
+  color: #ffffff;
+}
+
+.social__list {
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  min-height: 47px;
+  min-width: 189px;
+}
+
+.social__link{
+  display: inline-block;
+  background-color: #ffffff;
+  font-size: 0;
+  height: 47px;
+  width: 47px;
+}
+
+.social__item:first-child .social__link {
+  background: url("../img/instagram_icon.png") no-repeat;
+}
+
+.social__item:nth-child(2) .social__link {
+  background: url("../img/facebook_icon.png") no-repeat;
+}
+
+.social__item:last-child .social__link {
+  background: url("../img/twitter_icon.png") no-repeat;
+}
