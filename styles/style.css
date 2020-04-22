@@ -176,6 +176,10 @@
   width: 100px;
 }
 
+.deal:last-child::after {
+  display: none;
+}
+
 .deal__title {
   font-family: 'Playfair Display', sans-serif;
   font-size: 23px;
